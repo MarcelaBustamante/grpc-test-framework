@@ -1,0 +1,198 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-01-14T01:21:04.591Z",
+    "end": "2025-01-14T01:21:04.633Z",
+    "duration": 42,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cb39931f-23ab-41cf-bf53-3acd32967323",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eb7f12b2-d7f0-4a2a-a44c-ce56d3c29369",
+          "title": "Greeter Service",
+          "fullFile": "C:\\Users\\rompe\\Documents\\grpc-test-framework\\src\\tests\\fixtures\\greeterTest.spec.ts",
+          "file": "\\src\\tests\\fixtures\\greeterTest.spec.ts",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Greeter Service\"",
+              "fullTitle": "Greeter Service \"before all\" hook in \"Greeter Service\"",
+              "timedOut": false,
+              "duration": 4,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "greeterClient = new GreeterClient_1.GreeterClient();",
+              "err": {},
+              "uuid": "95919d84-9923-416f-b6f4-e8d5db18554a",
+              "parentUUID": "eb7f12b2-d7f0-4a2a-a44c-ce56d3c29369",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should say hello to Alice",
+              "fullTitle": "Greeter Service should say hello to Alice",
+              "timedOut": false,
+              "duration": 27,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "__awaiter(void 0, void 0, void 0, function* () {\n        const message = yield greeterClient.sayHello('Alice');\n        (0, chai_1.expect)(message).to.equal('Hello Alice');\n    })",
+              "err": {},
+              "uuid": "f9d25b68-cc9a-464c-a9ae-477caa679f33",
+              "parentUUID": "eb7f12b2-d7f0-4a2a-a44c-ce56d3c29369",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should say hello without name",
+              "fullTitle": "Greeter Service should say hello without name",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "__awaiter(void 0, void 0, void 0, function* () {\n        const message = yield greeterClient.sayHello('');\n        (0, chai_1.expect)(message).to.equal('Hello ');\n    })",
+              "err": {},
+              "uuid": "7cd8b703-2f5d-4e43-954a-bbcc9dcc4c7e",
+              "parentUUID": "eb7f12b2-d7f0-4a2a-a44c-ce56d3c29369",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f9d25b68-cc9a-464c-a9ae-477caa679f33",
+            "7cd8b703-2f5d-4e43-954a-bbcc9dcc4c7e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "0f93c193-0183-4f75-a2e8-3eee4880e8b3",
+          "title": "Greeter",
+          "fullFile": "C:\\Users\\rompe\\Documents\\grpc-test-framework\\src\\tests\\fixtures\\greeterTestAgain.spec.ts",
+          "file": "\\src\\tests\\fixtures\\greeterTestAgain.spec.ts",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should say hello to Alice",
+              "fullTitle": "Greeter should say hello to Alice",
+              "timedOut": false,
+              "duration": 4,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "__awaiter(void 0, void 0, void 0, function* () {\n        const message = yield sayHello('Alice');\n        (0, chai_1.expect)(message).to.equal('Hello Alice');\n    })",
+              "err": {},
+              "uuid": "4f7dbe42-44a4-4027-89b3-d9dc249baa4f",
+              "parentUUID": "0f93c193-0183-4f75-a2e8-3eee4880e8b3",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should say hello without name",
+              "fullTitle": "Greeter should say hello without name",
+              "timedOut": false,
+              "duration": 2,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "__awaiter(void 0, void 0, void 0, function* () {\n        const message = yield sayHello('');\n        (0, chai_1.expect)(message).to.equal('Hello ');\n    })",
+              "err": {},
+              "uuid": "dcb08cb1-23c3-4a74-8a7c-9ca09d2841f8",
+              "parentUUID": "0f93c193-0183-4f75-a2e8-3eee4880e8b3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4f7dbe42-44a4-4027-89b3-d9dc249baa4f",
+            "dcb08cb1-23c3-4a74-8a7c-9ca09d2841f8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportFilename": "report.html"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
